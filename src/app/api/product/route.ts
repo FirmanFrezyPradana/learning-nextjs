@@ -4,13 +4,29 @@ const data = [
     id: 1,
     title: "Sepatu 1",
     price: 100000,
-    image : "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_441,c_limit/01ffec46-0c01-4981-8808-a4cd35a57e96/dunk-low-retro-shoes-69h36X.png"
+    image:
+      "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_441,c_limit/01ffec46-0c01-4981-8808-a4cd35a57e96/dunk-low-retro-shoes-69h36X.png",
   },
   {
     id: 2,
     title: "Sepatu 2",
     price: 200000,
-    image : "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_441,c_limit/03141f2d-3ccd-49a3-9066-69a15695854c/dunk-low-retro-shoes-4vdSPt.png"
+    image:
+      "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_441,c_limit/03141f2d-3ccd-49a3-9066-69a15695854c/dunk-low-retro-shoes-4vdSPt.png",
+  },
+  {
+    id: 3,
+    title: "Sepatu 3",
+    price: 400000,
+    image:
+    "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_441,c_limit/b5406b0d-fb0b-4e94-ab81-4d24a3d79a2f/air-force-1-07-shoes-8jXZH2.png",
+  },
+  {
+    id: 4,
+    title: "Sepatu 4",
+    price: 600000,
+    image:
+    "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_2.0/h_441,c_limit/b5406b0d-fb0b-4e94-ab81-4d24a3d79a2f/air-force-1-07-shoes-8jXZH2.png",
   },
 ];
 
