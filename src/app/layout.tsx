@@ -1,11 +1,12 @@
 "use client";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./navbar";
 import "./globals.css";
 import { usePathname } from "next/navigation";
+import { SessionProvider } from "next-auth/react";
 const inter = Inter({ subsets: ["latin"] });
-const disableNavbar = ["/Login","/Register"]
+const disableNavbar = ["/Login", "/Register"];
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -21,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      {!disableNavbar.includes(pathname) && <Navbar/>}
-        {children}
+        <SessionProvider>
+          {!disableNavbar.includes(pathname) && <Navbar />}
+          {children}
+        </SessionProvider>
       </body>
     </html>
   );
