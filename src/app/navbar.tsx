@@ -7,8 +7,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const { data: session, status }: { data: any; status: string } = useSession();
-  console.log(session);
-  console.log(status);
+  console.log();
   return (
     <div className="flex bg-gray-800 py-2 px-3 justify-between">
       <div className="flex ">
@@ -45,12 +44,15 @@ export default function Navbar() {
       </div>
       <div className=" ">
         {status === "authenticated" ? (
-          <button
-            onClick={() => signOut()}
-            className=" bg-white rounded-lg px-3 h-7 cursor-pointer"
-          >
-            Log Out
-          </button>
+          <div className="flex">
+            <h4 className="text-white mr-5">{session?.user?.email}</h4>
+            <button
+              onClick={() => signOut()}
+              className=" bg-white rounded-lg px-3 h-7 cursor-pointer"
+            >
+              Log Out
+            </button>
+          </div>
         ) : (
           <button
             onClick={() => signIn()}
